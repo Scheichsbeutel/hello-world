@@ -84,15 +84,6 @@ namespace CSharpFunctionalExtensions
                 return result;
         }
 
-        //public static async Task<Result> TapIf(this Task<Result> resultTask, Func<bool> predicate, Action action)
-        //{
-        //    Result result = await resultTask.DefaultAwait();
-
-        //    if (result.IsSuccess && predicate())
-        //        return result.Tap(action);
-        //    else
-        //        return result;
-        //}
 
         /// <summary>
         ///     Executes the given action if the calling result is a success and condition is true. Returns the calling result.
